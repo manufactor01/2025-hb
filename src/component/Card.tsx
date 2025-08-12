@@ -5,7 +5,7 @@ const Card: FC<{ title: string; name: string, bgColor: string; textColor: string
     return <>
       <li className="w-[853px] min-h-[408px] list-none flex mt-10 max-sm:w-[300px]  max-sm:flex-col max-sm:min-h-[408px] " style={{ backgroundColor: bgColor }}>
         <div className="flex items-center justify-center w-6/12 max-sm:w-full ">
-          <div className="w-[321px] h-[306px] max-sm:w-[200px] max-sm:h-[250px] flex justify-center items-center"><img src={img} alt="" /></div>
+          <div className="w-[321px] h-[306px] max-sm:w-[200px] max-sm:h-[250px] flex justify-center items-center"><img src={`${import.meta.env.BASE_URL}${img}`} alt="" /></div>
         </div>
         <div className="w-6/12 font-sofia flex items-center  justify-evenly flex-col max-sm:w-full" style={{ color: textColor }}>
           <p className="w-[353px] text-left font-bold text-[28px] max-sm:w-4/5 max-sm:text-[14px]">{title}</p>
